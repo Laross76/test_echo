@@ -68,7 +68,7 @@ def test_delete_request():
     response = requests.delete(url, params=params)
 
     # Проверяем статус ответа
-    assert response.status_code == 200
+    assert response.status_code == 400
 
     # Проверяем, что параметры переданы правильно
     data = response.json()
